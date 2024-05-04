@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <style>
+            *{margin:0px; padding:0px;}
+
+            .flex-container
+            {
+                background-color:#ffe0f1;
+                /* background-color:floralwhite; */
+                width:100%;
+                height:100%;
+                display:flex;
+                justify-content:center;   /*left to right center*/
+                align-items:center;       /*top to bottom center*/
+                column-gap:15px;
+                font-family: sans-serif; 
+            }
+            .flex-items1
+            {
+               background-color:rgb(255, 64, 0);
+               width:340px;
+               /* height:425px; */
+               height:auto;
+               border-radius:10px 0px 0px 10px;
+               padding:9px;
+               box-shadow:0px 3px 10px 0px #666666;
+            }
+            .flex-items2
+            {
+               background-color:#00775f;
+               width:340px;
+               height:auto;
+               padding:9px;
+               box-shadow:0px 3px 10px 0px #555555;
+            }
+            .flex-items3
+            {
+               /* background-color:#004439; */
+               background-color:darkgoldenrod;
+               width:340px;
+               height:auto;
+               border-radius:0px 10px 10px 0px;
+               padding:9px;                               
+               box-shadow:0px 3px 10px 1px #555555;
+            }
+            .icons
+            {
+                height:100px;
+                margin-top:5px;
+                filter:drop-shadow(15px 1px 9px #333333);   /*define icons shadow*/
+            }
+            p 
+            {
+                font-size:18px; 
+                margin-top:15px; 
+                padding:10px; 
+                color:#eeeeee; 
+                line-height:2cap;
+            }
+           .marquee-heading
+            {
+                position:absolute; 
+                font-size:55px; 
+                font-weight:bold; 
+                font-family:arial; 
+                margin-top:50px; 
+                background-color:crimson;
+                color:#ffe0f1;
+            }
+            .text
+            {
+                font-weight:bold; 
+                font-size:31px; 
+                font-family:monospace;
+            }
+        </style>
+
+    </head>
+
+
+
+    <body>
+
+       <marquee direction="right" scrollamount="20" class="marquee-heading">Flexbox Cards Using HTML and CSS</marquee>
+
+        <div class="flex-container">
+
+            <div class="flex-items1"> <img src="html icon.png" class="icons"><p class="text">HTML</p> <p align="start">
+                HTML(Hyper Text Markup Language) is the backbone of web pages, organizing content with tags like text,
+                images, and links. Browsers interpret HTML to display websites, It enables interactive elements and multimedia
+                integration for dynamic web experiences.</p> 
+                <p>Learn more...</p>
+            </div>
+
+            <div class="flex-items2"> <img src="css icon.png" class="icons"> <p class="text">CSS</p> <p align="start">
+                CSS, or Cascading Style Sheets, enhances web pages with style for colors, fonts, and layout. It complements
+                HTML, separating design from content for easier management. CSS ensures consistency across pages and facilitates
+                responsive design.</p> 
+                <p>Learn more...</p>
+            </div>
+
+            <div class="flex-items3"> <img src="jsi1.png" class="icons js"> <p class="text">Javascript</p> <p align="start">
+                JavaScript is a versatile programming language javaScript adds interactivity to web pages, handling user actions
+                and dynamic content updates. It's essential for modern web development, working alongside HTML and CSS to create
+                engaging user experiences.</p>
+                <p>Learn more...</p>
+            </div>
+        </div>
+    </body>
+</html>
